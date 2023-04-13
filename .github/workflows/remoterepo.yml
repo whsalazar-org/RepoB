@@ -27,7 +27,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  RepoB-JobA:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -56,6 +56,6 @@ jobs:
           wait_time: 5
           max_time: 180
           
-  call-workflow-2-in-local-repo: 
-     needs: [build]
+  RepoB-JobB: 
+     needs: [RepoB-JobA]
      uses: ./.github/workflows/workflow-2.yml
