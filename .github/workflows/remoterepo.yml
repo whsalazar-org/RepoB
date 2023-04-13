@@ -57,4 +57,5 @@ jobs:
           max_time: 180
           
   call-workflow-2-in-local-repo: 
+     needs: [build]
      uses: ./.github/workflows/workflow-2.yml
