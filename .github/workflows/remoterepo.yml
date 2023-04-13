@@ -56,5 +56,5 @@ jobs:
           wait_time: 5
           max_time: 180
           
-    # call-workflow-2-in-caller-repo:
-  
+  call-workflow-2-in-local-repo: 
+     uses: ./.github/workflows/workflow-2.yml
